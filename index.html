@@ -14,44 +14,42 @@
 
     body {
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to right, #1c1c1c, #2c2c2c);
-      color: #fff;
+      background: #f8f8f8;
+      color: #222;
       line-height: 1.6;
-      padding-bottom: 30px;
     }
 
     header {
       background: #1c1c1c;
       color: #fefefe;
       text-align: center;
-      padding: 50px 20px 30px;
+      padding: 40px 20px;
       position: relative;
     }
 
     .download-btn {
       position: absolute;
-      top: 15px;
+      top: 20px;
       right: 30px;
       background: #d4af37;
       color: #1c1c1c;
       padding: 10px 20px;
       font-weight: bold;
       border: none;
-      border-radius: 30px;
-      box-shadow: 0 6px #a88d2e;
+      border-radius: 25px;
       cursor: pointer;
-      font-size: 14px;
-      transition: all 0.2s ease-in-out;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 0 #b8952f;
     }
 
-    .download-btn:active {
-      box-shadow: 0 2px #a88d2e;
-      transform: translateY(4px);
+    .download-btn:hover {
+      transform: translateY(2px);
+      box-shadow: 0 2px 0 #a8842a;
     }
 
     .profile-container img {
-      width: 110px;
-      height: 110px;
+      width: 120px;
+      height: 120px;
       border-radius: 50%;
       border: 3px solid #d4af37;
       margin-bottom: 10px;
@@ -64,28 +62,33 @@
 
     h2 {
       font-size: 1.2em;
-      color: #fefefe;
+      color: #1c1c1c;
       margin-bottom: 10px;
-      border-left: 5px solid #d4af37;
-      padding-left: 8px;
+      border-left: 6px solid #d4af37;
+      padding-left: 10px;
+      margin-top: 20px;
     }
 
     .container {
       width: 94%;
-      max-width: 1100px;
-      margin: 25px auto 0;
+      max-width: 960px;
+      margin: 20px auto;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      grid-template-columns: 1fr 1fr;
       gap: 15px;
     }
 
+    @media print, (max-width: 768px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+    }
+
     .section {
-      background: rgba(255, 255, 255, 0.05);
-      backdrop-filter: blur(8px);
-      border-radius: 10px;
-      padding: 18px 22px;
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+      background: #fff;
+      padding: 15px 20px;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.05);
     }
 
     ul {
@@ -93,7 +96,7 @@
     }
 
     ul li {
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
 
     a {
@@ -108,25 +111,22 @@
 
     .tag {
       display: inline-block;
-      background-color: rgba(255, 255, 255, 0.1);
-      color: #fefefe;
-      padding: 6px 10px;
+      background-color: #fef5dc;
+      color: #5a4a00;
+      padding: 5px 10px;
       border-radius: 20px;
-      margin: 4px 5px 8px 0;
+      margin: 4px 4px 8px 0;
       font-weight: 500;
-      font-size: 0.82em;
-      border: 1px solid #d4af37;
+      font-size: 0.85em;
+    }
+
+    .full-width {
+      grid-column: 1 / -1;
     }
 
     .info {
-      font-size: 0.88em;
+      font-size: 0.9em;
       color: #ccc;
-    }
-
-    .about-me {
-      font-size: 0.95em;
-      margin-top: 12px;
-      color: #e0e0e0;
     }
 
     @media print {
@@ -135,19 +135,7 @@
       }
 
       body {
-        background: white;
-        color: black;
-        padding: 0;
-      }
-
-      .section {
-        background: none;
-        box-shadow: none;
-        border: none;
-      }
-
-      a {
-        color: black;
+        zoom: 90%;
       }
     }
   </style>
@@ -162,9 +150,6 @@
     <p>Electrical Engineering Student | GIFT University</p>
     <p>Email: hammad.younas.info@gmail.com | 📞 +92 322 7711664</p>
     <p class="info">GitHub: <a href="https://github.com/Hammad-Younas-info" target="_blank">Hammad-Younas-info</a></p>
-    <p class="about-me">
-      Passionate about embedded systems, IoT, and automation. Dedicated to developing smart solutions that integrate hardware and software.
-    </p>
   </div>
 </header>
 
@@ -173,19 +158,21 @@
   <div class="section">
     <h2>🎓 Education</h2>
     <p><strong>BSc. Electrical Engineering</strong><br>GIFT University, 2021 – 2025</p>
+    <p><strong>Intermediate</strong><br>Punjab College Gujranwala</p>
+    <p><strong>Matriculation</strong><br>Education City School, Daska</p>
   </div>
 
   <div class="section">
     <h2>💼 Skills</h2>
     <div>
-      <span class="tag">Circuit Design</span>
-      <span class="tag">PLC</span>
-      <span class="tag">Arduino</span>
+      <span class="tag">Circuit Designing</span>
+      <span class="tag">PLC Programming</span>
       <span class="tag">C++</span>
       <span class="tag">Python</span>
       <span class="tag">Proteus</span>
       <span class="tag">Multisim</span>
       <span class="tag">Cisco</span>
+      <span class="tag">Arduino</span>
       <span class="tag">Altium</span>
     </div>
   </div>
@@ -195,37 +182,37 @@
     <ul>
       <li>
         <strong>Python Data Structures</strong> – Coursera, Jan 13, 2025<br/>
-        <a href="https://coursera.org/verify/MDE07E78YHYD" target="_blank">Verify</a>
+        <a href="https://coursera.org/verify/MDE07E78YHYD" target="_blank">Verify Certificate</a>
       </li>
       <li>
-        <strong>Programming for Everybody</strong> – Coursera, Jan 12, 2025<br/>
-        <a href="https://coursera.org/verify/RBQ188318LFN" target="_blank">Verify</a>
+        <strong>Programming for Everybody (Python)</strong> – Coursera, Jan 12, 2025<br/>
+        <a href="https://coursera.org/verify/RBQ188318LFN" target="_blank">Verify Certificate</a>
       </li>
     </ul>
   </div>
 
   <div class="section">
+    <h2>💼 Experience</h2>
+    <p><strong>Northern Power Generation Company Limited (NPGCL)</strong><br>
+    Internship – Gujranwala, Pakistan<br>
+    Worked on power plant operations, electrical maintenance, and energy systems understanding.</p>
+  </div>
+
+  <div class="section full-width">
     <h2>💡 Projects</h2>
     <ul>
       <li>
         <strong>Clap Light Switch</strong><br/>
-        <a href="https://github.com/Hammad-Younas-info/clap-light-switch" target="_blank">GitHub</a>
+        <a href="https://github.com/Hammad-Younas-info/clap-light-switch" target="_blank">View Project</a>
       </li>
       <li>
-        <strong>IoT Home Automation</strong><br/>
-        <a href="https://github.com/Hammad-Younas-info/IoT-Base-Home-Automation-System" target="_blank">GitHub</a>
+        <strong>IoT-Based Home Automation System</strong><br/>
+        <a href="https://github.com/Hammad-Younas-info/IoT-Base-Home-Automation-System" target="_blank">View Project</a>
       </li>
     </ul>
   </div>
 
-  <div class="section">
-    <h2>🏢 Experience</h2>
-    <p><strong>NPGCL – Northern Power Generation Company Limited</strong><br>
-      Internship | Gujranwala, Pakistan</p>
-    <p class="info">Gained practical experience in power systems, plant operations, and real-time maintenance processes at a national thermal power station.</p>
-  </div>
-
-  <div class="section">
+  <div class="section full-width">
     <h2>📞 Contact</h2>
     <p>Email: <a href="mailto:hammad.younas.info@gmail.com">hammad.younas.info@gmail.com</a></p>
     <p>Phone: +92 322 7711664</p>
