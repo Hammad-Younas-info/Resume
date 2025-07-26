@@ -1,23 +1,31 @@
-# Hammad Younas - Online Resume
+# 💼 Hammad Younas - Electrical Engineer
 
-Welcome to my digital CV!
+Welcome to my interactive **HTML CV** hosted using **GitHub Pages**.
 
-## 👨‍🎓 About Me
-I'm an Electrical Engineering student at GIFT University (2021–2025) with a passion for electronics, embedded systems, and automation.
+## 📄 About Me
+I am a final-year **Electrical Engineering** student at **GIFT University**, with strong skills in embedded systems, programming, and circuit design.
 
-## 📄 Live CV
-Check it here: [My Online CV](https://hammad-younas-info.github.io/Resume/)
+## 🛠 Skills
+- Circuit Designing, PLC Programming  
+- C++, Python, Arduino  
+- Proteus, Multisim, Cisco  
+- Altium Designer
 
-## 📌 Skills
-- Arduino, Proteus, MATLAB
-- C++, Python, Git, HTML/CSS
-- PCB Design, Embedded Systems
+## 🎓 Certifications
+- Python Data Structures – Coursera – *Jan 13, 2025*  
+- Programming for Everybody (Getting Started with Python) – *Jan 12, 2025*
 
-## 💡 Projects
-- Gesture-Controlled Smart Wheelchair
-- Line Following Robot
-- IoT-Based Home Automation
+## 🌐 Live CV Link
+👉 [View My CV](https://hammad-younas-info.github.io/Resume/)
 
-## 📞 Contact
-- Email: hammad.younas.info@gmail.com  
-- GitHub: [@hammadyounas](https://hammad-younas-info.github.io/Resume/)
+## 📁 Repo Contents
+- `index.html` – The main file for my personal CV  
+- `Picture 1.png.` – My profile image
+
+## 📫 Contact
+- 📧 hammad.younas.info@gmail.com  
+- 📱 +92 322 7711664  
+- 🔗 [GitHub Profile](https://hammad-younas-info.github.io/Resume/))
+
+---
+> This CV is built using only **HTML and CSS**, hosted using **GitHub Pages**.
