@@ -1,62 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
   <title>Hammad Younas - Electrical Engineer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
   <style>
     body {
-      font-family: 'Roboto', sans-serif;
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
       display: flex;
-      background: #f4f4f4;
+      background-color: #f5f5f5;
     }
+
     .sidebar {
       width: 30%;
-      background: #fff;
+      background-color: white;
       padding: 20px;
-      text-align: center;
-      box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+      box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
     }
-    .sidebar img {
-      width: 150px;
-      border-radius: 50%;
-      margin-bottom: 20px;
-    }
-    .sidebar h2 {
-      margin-bottom: 5px;
-    }
-    .section {
+
+    .main {
       width: 70%;
-      padding: 30px;
+      padding: 40px;
     }
-    h1 {
-      margin-top: 0;
-      font-size: 36px;
-    }
-    h2 {
-      border-bottom: 2px solid red;
-      padding-bottom: 5px;
-      margin-top: 40px;
-    }
-    .skills span {
-      display: block;
-      margin: 10px 0;
+
+    h1, h2 {
       color: #333;
     }
+
+    .skills, .bar {
+      height: 20px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+
     .bar {
-      height: 6px;
-      background: red;
-      width: 80%;
-      margin: 4px 0 12px;
+      background-color: #ddd;
     }
-    .contact p {
-      margin: 8px 0;
+
+    .skills {
+      background-color: red;
+      text-align: right;
+      color: white;
+      padding-right: 10px;
+      line-height: 20px;
     }
-    ul {
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .contact, .section {
+      margin-bottom: 20px;
+    }
+
+    .section ul {
       padding-left: 20px;
+    }
+
+    .red {
+      color: red;
     }
   </style>
 </head>
@@ -64,54 +69,69 @@
 
   <div class="sidebar">
     <img src="your-photo.jpg" alt="Hammad Younas">
-    <h2>Hammad Younas</h2>
-    <p>Electrical Engineer</p>
+    <h2>CONTACT</h2>
+    <p>📍 Lahore, Pakistan</p>
+    <p>📞 +92 322 7711664</p>
+    <p>📧 hammad.younas.info@gmail.com</p>
 
-    <h3>Skills</h3>
-    <div class="skills">
-      <span>Arduino</span><div class="bar" style="width:90%"></div>
-      <span>MATLAB</span><div class="bar" style="width:80%"></div>
-      <span>C/C++</span><div class="bar" style="width:75%"></div>
-      <span>Proteus</span><div class="bar" style="width:85%"></div>
-      <span>Embedded Systems</span><div class="bar" style="width:80%"></div>
-      <span>HTML/CSS</span><div class="bar" style="width:70%"></div>
-    </div>
+    <h2>SKILLS</h2>
 
-    <h3>Contact</h3>
-    <div class="contact">
-      <p>📍 GIFT University, Gujranwala</p>
-      <p>📞 0322 7711664</p>
-      <p>✉️ hammad.younas.info@gmail.com</p>
-      <p>🌐 github.com/hammadyounas</p>
-    </div>
+    <p>Circuit Designing</p>
+    <div class="bar"><div class="skills" style="width:90%">4+ yrs</div></div>
+
+    <p>PLC Programming</p>
+    <div class="bar"><div class="skills" style="width:80%">4+ yrs</div></div>
+
+    <p>C++</p>
+    <div class="bar"><div class="skills" style="width:85%">4+ yrs</div></div>
+
+    <p>Python</p>
+    <div class="bar"><div class="skills" style="width:80%">4+ yrs</div></div>
+
+    <p>Proteus</p>
+    <div class="bar"><div class="skills" style="width:85%">5+ yrs</div></div>
+
+    <p>Multisim</p>
+    <div class="bar"><div class="skills" style="width:70%">5 yrs</div></div>
+
+    <p>Cisco Packet Tracer</p>
+    <div class="bar"><div class="skills" style="width:65%">5 yrs</div></div>
+
+    <p>Arduino</p>
+    <div class="bar"><div class="skills" style="width:90%">5+ yrs</div></div>
+
+    <p>Altium Designer</p>
+    <div class="bar"><div class="skills" style="width:60%">4 yrs</div></div>
   </div>
 
-  <div class="section">
-    <h1>PROFILE</h1>
-    <p>Final year Electrical Engineering student passionate about automation, embedded systems, and electronics. Experience in designing and building real-world systems such as smart wheelchair, robotic cars, and IoT-based applications.</p>
+  <div class="main">
+    <h1>Hammad Younas</h1>
+    <h3 class="red">Electrical Engineer | Embedded Systems & Automation</h3>
 
-    <h2>PROJECT EXPERIENCE</h2>
-    <h3>Gesture-Controlled Smart Wheelchair</h3>
-    <ul>
-      <li>Controlled with hand gestures using MPU6050 and Arduino</li>
-      <li>Obstacle and stair detection with ultrasonic and IR sensors</li>
-      <li>Added medicine reminder and safety buzzer</li>
-    </ul>
+    <div class="section">
+      <h2>PROFILE</h2>
+      <p>Electrical Engineering student with hands-on experience in circuit design, embedded systems, and automation projects. Skilled in PLC, microcontrollers, and software tools like Proteus, Multisim, and Arduino. Passionate about combining hardware and software to build smart systems.</p>
+    </div>
 
-    <h3>IoT-Based Home Automation</h3>
-    <ul>
-      <li>Controlled appliances via smartphone using NodeMCU</li>
-      <li>Realtime sensor data monitoring on web dashboard</li>
-    </ul>
+    <div class="section">
+      <h2>PROJECT EXPERIENCE</h2>
+      <h3 class="red">Smart Gesture-Controlled Wheelchair</h3>
+      <ul>
+        <li>Used hand gestures to control wheelchair direction (forward, left, right, reverse)</li>
+        <li>Implemented obstacle and stair detection for safety</li>
+        <li>Integrated medicine reminder system with buzzer</li>
+        <li>Technologies: Arduino, MPU6050, Ultrasonic Sensor, NRF24L01</li>
+      </ul>
+    </div>
 
-    <h2>EDUCATION</h2>
-    <p><strong>BSc Electrical Engineering</strong> (2021–2025)<br/>GIFT University, Gujranwala</p>
-
-    <h2>ACHIEVEMENTS</h2>
-    <ul>
-      <li>Winner - Final Year Project Presentation (2025)</li>
-      <li>Best Embedded Systems Project (GIFT TechFest 2024)</li>
-    </ul>
+    <div class="section">
+      <h2>TOOLS & TECHNOLOGIES</h2>
+      <ul>
+        <li>Proteus, Multisim, Altium Designer</li>
+        <li>Arduino IDE, Python, C++, Ladder Logic</li>
+        <li>MATLAB/Simulink, Packet Tracer</li>
+      </ul>
+    </div>
   </div>
 
 </body>
