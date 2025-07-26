@@ -20,7 +20,7 @@ I am a final-year **Electrical Engineering** student at **GIFT University**, wit
 
 ## 📁 Repo Contents
 - `index.html` – The main file for my personal CV  
-- `Picture 1.png.` – My profile image
+- `Picture 1.png` – My profile image
 
 ## 📫 Contact
 - 📧 hammad.younas.info@gmail.com  
