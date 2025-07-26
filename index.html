@@ -17,81 +17,75 @@
       background: linear-gradient(to right, #1c1c1c, #2c2c2c);
       color: #fff;
       line-height: 1.6;
+      padding-bottom: 30px;
     }
 
     header {
       background: #1c1c1c;
       color: #fefefe;
       text-align: center;
-      padding: 60px 20px 40px;
+      padding: 50px 20px 30px;
       position: relative;
     }
 
     .download-btn {
       position: absolute;
-      top: 20px;
+      top: 15px;
       right: 30px;
       background: #d4af37;
       color: #1c1c1c;
-      padding: 12px 25px;
+      padding: 10px 20px;
       font-weight: bold;
       border: none;
       border-radius: 30px;
-      box-shadow: 0 8px #a88d2e;
+      box-shadow: 0 6px #a88d2e;
       cursor: pointer;
-      font-size: 15px;
+      font-size: 14px;
       transition: all 0.2s ease-in-out;
     }
 
     .download-btn:active {
       box-shadow: 0 2px #a88d2e;
-      transform: translateY(6px);
+      transform: translateY(4px);
     }
 
     .profile-container img {
-      width: 140px;
-      height: 140px;
+      width: 110px;
+      height: 110px;
       border-radius: 50%;
-      border: 4px solid #d4af37;
-      margin-bottom: 15px;
+      border: 3px solid #d4af37;
+      margin-bottom: 10px;
     }
 
     h1 {
-      font-size: 2.8em;
+      font-size: 2em;
       font-weight: 700;
-      margin-bottom: 8px;
     }
 
     h2 {
-      font-size: 1.5em;
+      font-size: 1.2em;
       color: #fefefe;
-      margin-bottom: 12px;
-      border-left: 6px solid #d4af37;
-      padding-left: 10px;
+      margin-bottom: 10px;
+      border-left: 5px solid #d4af37;
+      padding-left: 8px;
     }
 
     .container {
-      width: 92%;
-      max-width: 1000px;
-      margin: 30px auto;
+      width: 94%;
+      max-width: 1100px;
+      margin: 25px auto 0;
       display: grid;
-      grid-template-columns: 1fr;
-      gap: 20px;
-    }
-
-    @media(min-width: 768px) {
-      .container {
-        grid-template-columns: 1fr 1fr;
-      }
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 15px;
     }
 
     .section {
       background: rgba(255, 255, 255, 0.05);
       backdrop-filter: blur(8px);
-      border-radius: 12px;
-      padding: 25px 30px;
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      padding: 18px 22px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
     }
 
     ul {
@@ -99,7 +93,7 @@
     }
 
     ul li {
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
 
     a {
@@ -116,33 +110,45 @@
       display: inline-block;
       background-color: rgba(255, 255, 255, 0.1);
       color: #fefefe;
-      padding: 6px 12px;
+      padding: 6px 10px;
       border-radius: 20px;
-      margin: 5px 5px 10px 0;
+      margin: 4px 5px 8px 0;
       font-weight: 500;
-      font-size: 0.85em;
+      font-size: 0.82em;
       border: 1px solid #d4af37;
     }
 
-    .full-width {
-      grid-column: 1 / -1;
+    .info {
+      font-size: 0.88em;
+      color: #ccc;
     }
 
-    .info {
-      font-size: 0.9em;
-      color: #ccc;
+    .about-me {
+      font-size: 0.95em;
+      margin-top: 12px;
+      color: #e0e0e0;
     }
 
     @media print {
       .download-btn {
         display: none;
       }
-    }
 
-    .about-me {
-      font-size: 1em;
-      margin-top: 15px;
-      color: #e0e0e0;
+      body {
+        background: white;
+        color: black;
+        padding: 0;
+      }
+
+      .section {
+        background: none;
+        box-shadow: none;
+        border: none;
+      }
+
+      a {
+        color: black;
+      }
     }
   </style>
 </head>
@@ -157,7 +163,7 @@
     <p>Email: hammad.younas.info@gmail.com | 📞 +92 322 7711664</p>
     <p class="info">GitHub: <a href="https://github.com/Hammad-Younas-info" target="_blank">Hammad-Younas-info</a></p>
     <p class="about-me">
-      I’m a passionate electrical engineering student who enjoys working on embedded systems, automation, and innovative electronics projects. I love blending hardware and software to create meaningful solutions.
+      Passionate about embedded systems, IoT, and automation. Dedicated to developing smart solutions that integrate hardware and software.
     </p>
   </div>
 </header>
@@ -172,47 +178,54 @@
   <div class="section">
     <h2>💼 Skills</h2>
     <div>
-      <span class="tag">Circuit Designing</span>
-      <span class="tag">PLC Programming</span>
+      <span class="tag">Circuit Design</span>
+      <span class="tag">PLC</span>
+      <span class="tag">Arduino</span>
       <span class="tag">C++</span>
       <span class="tag">Python</span>
       <span class="tag">Proteus</span>
       <span class="tag">Multisim</span>
       <span class="tag">Cisco</span>
-      <span class="tag">Arduino</span>
       <span class="tag">Altium</span>
     </div>
   </div>
 
-  <div class="section full-width">
+  <div class="section">
     <h2>📜 Certifications</h2>
     <ul>
       <li>
         <strong>Python Data Structures</strong> – Coursera, Jan 13, 2025<br/>
-        <a href="https://coursera.org/verify/MDE07E78YHYD" target="_blank">Verify Certificate</a>
+        <a href="https://coursera.org/verify/MDE07E78YHYD" target="_blank">Verify</a>
       </li>
       <li>
-        <strong>Programming for Everybody (Getting Started with Python)</strong> – Coursera, Jan 12, 2025<br/>
-        <a href="https://coursera.org/verify/RBQ188318LFN" target="_blank">Verify Certificate</a>
+        <strong>Programming for Everybody</strong> – Coursera, Jan 12, 2025<br/>
+        <a href="https://coursera.org/verify/RBQ188318LFN" target="_blank">Verify</a>
       </li>
     </ul>
   </div>
 
-  <div class="section full-width">
+  <div class="section">
     <h2>💡 Projects</h2>
     <ul>
       <li>
         <strong>Clap Light Switch</strong><br/>
-        <a href="https://github.com/Hammad-Younas-info/clap-light-switch" target="_blank">View Clap Light Switch Project</a>
+        <a href="https://github.com/Hammad-Younas-info/clap-light-switch" target="_blank">GitHub</a>
       </li>
       <li>
-        <strong>IoT-Based Home Automation System</strong><br/>
-        <a href="https://github.com/Hammad-Younas-info/IoT-Base-Home-Automation-System" target="_blank">View Project</a>
+        <strong>IoT Home Automation</strong><br/>
+        <a href="https://github.com/Hammad-Younas-info/IoT-Base-Home-Automation-System" target="_blank">GitHub</a>
       </li>
     </ul>
   </div>
 
-  <div class="section full-width">
+  <div class="section">
+    <h2>🏢 Experience</h2>
+    <p><strong>NPGCL – Northern Power Generation Company Limited</strong><br>
+      Internship | Gujranwala, Pakistan</p>
+    <p class="info">Gained practical experience in power systems, plant operations, and real-time maintenance processes at a national thermal power station.</p>
+  </div>
+
+  <div class="section">
     <h2>📞 Contact</h2>
     <p>Email: <a href="mailto:hammad.younas.info@gmail.com">hammad.younas.info@gmail.com</a></p>
     <p>Phone: +92 322 7711664</p>
