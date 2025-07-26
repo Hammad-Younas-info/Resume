@@ -4,119 +4,115 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Hammad Younas - Electrical Engineer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
   <style>
-    * {
-      box-sizing: border-box;
-    }
     body {
-      font-family: 'Montserrat', sans-serif;
+      font-family: 'Roboto', sans-serif;
       margin: 0;
-      background: #f9f9f9;
-      color: #333;
-      line-height: 1.6;
+      padding: 0;
+      display: flex;
+      background: #f4f4f4;
     }
-    header {
-      background: #004466;
-      color: #fff;
-      padding: 40px 0;
+    .sidebar {
+      width: 30%;
+      background: #fff;
+      padding: 20px;
       text-align: center;
+      box-shadow: 2px 0 5px rgba(0,0,0,0.1);
     }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
+    .sidebar img {
+      width: 150px;
+      border-radius: 50%;
+      margin-bottom: 20px;
     }
-    header p {
-      font-size: 1.1rem;
-    }
-    .container {
-      width: 90%;
-      max-width: 900px;
-      margin: auto;
-      padding: 30px 0;
-    }
-    h2 {
-      border-bottom: 2px solid #004466;
-      padding-bottom: 5px;
-      margin-bottom: 15px;
-      font-size: 1.5rem;
+    .sidebar h2 {
+      margin-bottom: 5px;
     }
     .section {
-      background: #fff;
-      margin-bottom: 30px;
-      padding: 25px;
-      border-radius: 12px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      width: 70%;
+      padding: 30px;
+    }
+    h1 {
+      margin-top: 0;
+      font-size: 36px;
+    }
+    h2 {
+      border-bottom: 2px solid red;
+      padding-bottom: 5px;
+      margin-top: 40px;
+    }
+    .skills span {
+      display: block;
+      margin: 10px 0;
+      color: #333;
+    }
+    .bar {
+      height: 6px;
+      background: red;
+      width: 80%;
+      margin: 4px 0 12px;
+    }
+    .contact p {
+      margin: 8px 0;
     }
     ul {
-      list-style: none;
-      padding-left: 0;
-    }
-    ul li {
-      margin-bottom: 8px;
-    }
-    .projects a {
-      color: #004466;
-      text-decoration: none;
-      font-weight: 500;
-    }
-    .projects a:hover {
-      text-decoration: underline;
-    }
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 1.8rem;
-      }
-      header p {
-        font-size: 1rem;
-      }
+      padding-left: 20px;
     }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>Hammad Younas</h1>
-  <p>Electrical Engineering Student | GIFT University</p>
-  <p>Email: hammad.younas.info@gmail.com | Phone: +92 322 7711664</p>
-</header>
+  <div class="sidebar">
+    <img src="your-photo.jpg" alt="Hammad Younas">
+    <h2>Hammad Younas</h2>
+    <p>Electrical Engineer</p>
 
-<div class="container">
+    <h3>Skills</h3>
+    <div class="skills">
+      <span>Arduino</span><div class="bar" style="width:90%"></div>
+      <span>MATLAB</span><div class="bar" style="width:80%"></div>
+      <span>C/C++</span><div class="bar" style="width:75%"></div>
+      <span>Proteus</span><div class="bar" style="width:85%"></div>
+      <span>Embedded Systems</span><div class="bar" style="width:80%"></div>
+      <span>HTML/CSS</span><div class="bar" style="width:70%"></div>
+    </div>
 
-  <div class="section">
-    <h2>🎓 Education</h2>
-    <p><strong>BSc. Electrical Engineering</strong> – GIFT University<br/>2021 – 2025</p>
+    <h3>Contact</h3>
+    <div class="contact">
+      <p>📍 GIFT University, Gujranwala</p>
+      <p>📞 0322 7711664</p>
+      <p>✉️ hammad.younas.info@gmail.com</p>
+      <p>🌐 github.com/hammadyounas</p>
+    </div>
   </div>
 
   <div class="section">
-    <h2>🛠 Skills</h2>
+    <h1>PROFILE</h1>
+    <p>Final year Electrical Engineering student passionate about automation, embedded systems, and electronics. Experience in designing and building real-world systems such as smart wheelchair, robotic cars, and IoT-based applications.</p>
+
+    <h2>PROJECT EXPERIENCE</h2>
+    <h3>Gesture-Controlled Smart Wheelchair</h3>
     <ul>
-      <li>Arduino, Proteus, MATLAB, Multisim</li>
-      <li>C++, Python, Git, HTML/CSS</li>
-      <li>Embedded Systems, PCB Design</li>
+      <li>Controlled with hand gestures using MPU6050 and Arduino</li>
+      <li>Obstacle and stair detection with ultrasonic and IR sensors</li>
+      <li>Added medicine reminder and safety buzzer</li>
+    </ul>
+
+    <h3>IoT-Based Home Automation</h3>
+    <ul>
+      <li>Controlled appliances via smartphone using NodeMCU</li>
+      <li>Realtime sensor data monitoring on web dashboard</li>
+    </ul>
+
+    <h2>EDUCATION</h2>
+    <p><strong>BSc Electrical Engineering</strong> (2021–2025)<br/>GIFT University, Gujranwala</p>
+
+    <h2>ACHIEVEMENTS</h2>
+    <ul>
+      <li>Winner - Final Year Project Presentation (2025)</li>
+      <li>Best Embedded Systems Project (GIFT TechFest 2024)</li>
     </ul>
   </div>
-
-  <div class="section projects">
-    <h2>💡 Projects</h2>
-    <p><strong>Gesture-Controlled Smart Wheelchair</strong><br/>
-    <a href="https://github.com/yourusername/wheelchair-project" target="_blank">View on GitHub</a></p>
-
-    <p><strong>Line Following Robot using IR Sensors</strong><br/>
-    <a href="https://github.com/yourusername/line-following-robot" target="_blank">View on GitHub</a></p>
-
-    <p><strong>IoT-Based Home Automation</strong><br/>
-    <a href="https://github.com/yourusername/home-automation" target="_blank">View on GitHub</a></p>
-  </div>
-
-  <div class="section">
-    <h2>📞 Contact</h2>
-    <p>Email: hammad.younas.info@gmail.com</p>
-    <p>Phone: +92 322 7711664</p>
-    <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
-  </div>
-
-</div>
 
 </body>
 </html>
