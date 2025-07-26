@@ -25,7 +25,7 @@ I am a final-year **Electrical Engineering** student at **GIFT University**, wit
 ## 📫 Contact
 - 📧 hammad.younas.info@gmail.com  
 - 📱 +92 322 7711664  
-- 🔗 [GitHub Profile](https://hammad-younas-info.github.io/Resume/))
+- 🔗 [GitHub Profile](https://github.com/Hammad-Younas-info)
 
 ---
 > This CV is built using only **HTML and CSS**, hosted using **GitHub Pages**.
