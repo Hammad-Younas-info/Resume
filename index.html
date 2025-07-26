@@ -1,138 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Hammad Younas - Electrical Engineer</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet"/>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Roboto', sans-serif;
       margin: 0;
-      padding: 0;
-      display: flex;
-      background-color: #f5f5f5;
-    }
-
-    .sidebar {
-      width: 30%;
-      background-color: white;
-      padding: 20px;
-      box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .main {
-      width: 70%;
-      padding: 40px;
-    }
-
-    h1, h2 {
+      background: #f0f8ff;
       color: #333;
     }
-
-    .skills, .bar {
-      height: 20px;
-      margin-bottom: 10px;
+    header {
+      background: #003366;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: 20px auto;
+    }
+    .section {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1, h2 {
+      margin: 0;
+    }
+    h2 {
+      color: #003366;
+      border-bottom: 2px solid #003366;
+      padding-bottom: 5px;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    li {
+      background: #e6f0ff;
+      margin: 5px 0;
+      padding: 8px 10px;
       border-radius: 5px;
     }
-
-    .bar {
-      background-color: #ddd;
+    a {
+      color: #003366;
+      text-decoration: none;
     }
-
-    .skills {
-      background-color: blue;
-      text-align: right;
-      color: white;
-      padding-right: 10px;
-      line-height: 20px;
+    .certificates p, .projects p {
+      margin: 5px 0;
     }
-
-    img {
-      width: 100%;
-      border-radius: 10px;
+    .skills li {
+      font-weight: 500;
+    }
+    img.profile {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-top: 10px;
+    }
+    .profile-container {
+      text-align: center;
       margin-bottom: 20px;
-    }
-
-    .contact, .section {
-      margin-bottom: 20px;
-    }
-
-    .section ul {
-      padding-left: 20px;
-    }
-
-    .red {
-      color: red;
     }
   </style>
 </head>
 <body>
 
-  <div class="sidebar">
-    <img src="your-photo.jpg" alt="Hammad Younas">
-    <h2>CONTACT</h2>
-    <p>📍 Daska, Pakistan</p>
-    <p>📞 +92 322 7711664</p>
-    <p>📧 hammad.younas.info@gmail.com</p>
-
-    <h2>SKILLS</h2>
-
-    <p>Circuit Designing</p>
-    <div class="bar"><div class="skills" style="width:90%">4+ yrs</div></div>
-
-    <p>PLC Programming</p>
-    <div class="bar"><div class="skills" style="width:80%">4+ yrs</div></div>
-
-    <p>C++</p>
-    <div class="bar"><div class="skills" style="width:85%">4+ yrs</div></div>
-
-    <p>Python</p>
-    <div class="bar"><div class="skills" style="width:80%">4+ yrs</div></div>
-
-    <p>Proteus</p>
-    <div class="bar"><div class="skills" style="width:85%">5+ yrs</div></div>
-
-    <p>Multisim</p>
-    <div class="bar"><div class="skills" style="width:70%">5 yrs</div></div>
-
-    <p>Cisco Packet Tracer</p>
-    <div class="bar"><div class="skills" style="width:65%">5 yrs</div></div>
-
-    <p>Arduino</p>
-    <div class="bar"><div class="skills" style="width:90%">5+ yrs</div></div>
-
-    <p>Altium Designer</p>
-    <div class="bar"><div class="skills" style="width:60%">4 yrs</div></div>
-  </div>
-
-  <div class="main">
+<header>
+  <div class="profile-container">
+    <img src="your-photo.jpg" alt="Hammad Younas" class="profile">
     <h1>Hammad Younas</h1>
-    <h3 class="red">Electrical Engineer | Embedded Systems & Automation</h3>
-
-    <div class="section">
-      <h2>PROFILE</h2>
-      <p>Electrical Engineer with hands-on experience in embedded systems, circuit design, and automation. Skilled in microcontrollers (Arduino, Raspberry Pi), simulation tools (Proteus, Multisim), and programming (C++, Python). Strong background in power electronics, control systems, and real-time communication protocols . Passionate about developing smart, innovative solutions for real-world challenges..</p>
-    </div>
-
-    <div class="section">
-      <h2>PROJECT EXPERIENCE</h2>
-      <h3 class="red">Smart Gesture-Controlled Wheelchair</h3>
-      <ul>
-        <li>Used hand gestures to control wheelchair direction (forward, left, right, reverse)</li>
-        <li>Implemented obstacle and stair detection for safety</li>
-        <li>Integrated medicine reminder system with buzzer</li>
-        <li>Technologies: Arduino, MPU6050, Ultrasonic Sensor, NRF24L01</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2>TOOLS & TECHNOLOGIES</h2>
-      <ul>
-        <li>Proteus, Multisim, Altium Designer</li>
-        <li>Arduino IDE, Python, C++, Ladder Logic</li>
-        <li>MATLAB/Simulink, Packet Tracer</li>
-      </ul>
-    </div>
+    <p>Electrical Engineering Student | GIFT University</p>
+    <p>Email: hammad.younas.info@gmail.com | Phone: +92 322 7711664</p>
   </div>
+</header>
+
+<div class="container">
+
+  <div class="section">
+    <h2>🎓 Education</h2>
+    <p><strong>BSc. Electrical Engineering</strong> – GIFT University<br>2021 – 2025</p>
+  </div>
+
+  <div class="section skills">
+    <h2>🛠 Skills</h2>
+    <ul>
+      <li>Circuit Designing</li>
+      <li>PLC Programming</li>
+      <li>C++</li>
+      <li>Python</li>
+      <li>Proteus</li>
+      <li>Multisim</li>
+      <li>Cisco</li>
+      <li>Arduino</li>
+      <li>Altium</li>
+    </ul>
+  </div>
+
+  <div class="section certificates">
+    <h2>📜 Coursera Certificates</h2>
+    <p><strong>Python Data Structures</strong> – Jan 13, 2025</p>
+    <p><strong>Programming for Everybody (Getting Started with Python)</strong> – Jan 12, 2025</p>
+  </div>
+
+  <div class="section projects">
+    <h2>💡 Projects</h2>
+    <p><strong>Gesture-Controlled Smart Wheelchair</strong></p>
+    <a href="https://github.com/yourusername/wheelchair-project" target="_blank">GitHub Link</a>
+
+    <p><strong>Line Following Robot using IR Sensors</strong></p>
+    <a href="https://github.com/yourusername/line-following-robot" target="_blank">GitHub Link</a>
+
+    <p><strong>IoT-Based Home Automation</strong></p>
+    <a href="https://github.com/yourusername/home-automation" target="_blank">GitHub Link</a>
+  </div>
+
+  <div class="section">
+    <h2>📞 Contact</h2>
+    <p>Email: hammad.younas.info@gmail.com</p>
+    <p>Phone: +92 322 7711664</p>
+    <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+  </div>
+
+</div>
 
 </body>
 </html>
