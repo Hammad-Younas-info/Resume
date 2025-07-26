@@ -20,4 +20,4 @@ Check it here: [My Online CV](https://hammad-younas-info.github.io/Resume/)
 
 ## 📞 Contact
 - Email: hammad.younas.info@gmail.com  
-- GitHub: [@hammadyounas](https://github.com/hammadyounas)
+- GitHub: [@hammadyounas](https://hammad-younas-info.github.io/Resume/)
