@@ -4,138 +4,153 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Hammad Younas - CV</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
   <style>
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
 
     body {
-      font-family: 'Poppins', sans-serif;
-      background: #f8f8f8;
+      font-family: 'Inter', sans-serif;
+      background-color: #f5f5f5;
       color: #222;
       line-height: 1.6;
     }
 
     header {
-      background: #1c1c1c;
-      color: #fefefe;
+      background: #111;
+      color: #f1c40f;
       text-align: center;
-      padding: 40px 20px;
+      padding: 50px 20px;
       position: relative;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     }
 
     .download-btn {
       position: absolute;
       top: 20px;
       right: 30px;
-      background: #d4af37;
-      color: #1c1c1c;
       padding: 10px 20px;
-      font-weight: bold;
+      background-color: #f1c40f;
       border: none;
+      color: #000;
+      font-weight: 700;
       border-radius: 25px;
       cursor: pointer;
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 0 #b8952f;
+      transition: background 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
 
     .download-btn:hover {
-      transform: translateY(2px);
-      box-shadow: 0 2px 0 #a8842a;
+      background-color: #ffd700;
+      transform: translateY(-2px);
     }
 
     .profile-container img {
       width: 120px;
       height: 120px;
       border-radius: 50%;
-      border: 3px solid #d4af37;
+      border: 3px solid #f1c40f;
       margin-bottom: 10px;
     }
 
     h1 {
-      font-size: 2em;
+      font-size: 2.2em;
       font-weight: 700;
+      margin-bottom: 5px;
+    }
+
+    .intro-text {
+      font-size: 1em;
+      margin-top: 8px;
+      color: #ccc;
     }
 
     h2 {
-      font-size: 1.2em;
-      color: #1c1c1c;
-      margin-bottom: 10px;
-      border-left: 6px solid #d4af37;
-      padding-left: 10px;
-      margin-top: 20px;
+      font-size: 1.4em;
+      color: #222;
+      border-left: 5px solid #f1c40f;
+      padding-left: 12px;
+      margin-bottom: 15px;
     }
 
     .container {
-      width: 94%;
       max-width: 960px;
-      margin: 20px auto;
+      margin: 30px auto;
+      padding: 0 20px;
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 15px;
-    }
-
-    @media print, (max-width: 768px) {
-      .container {
-        grid-template-columns: 1fr;
-      }
+      gap: 20px;
     }
 
     .section {
       background: #fff;
-      padding: 15px 20px;
-      border-radius: 12px;
-      box-shadow: 0 6px 12px rgba(0,0,0,0.05);
-    }
-
-    ul {
-      padding-left: 18px;
-    }
-
-    ul li {
-      margin-bottom: 8px;
-    }
-
-    a {
-      color: #d4af37;
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    a:hover {
-      color: #a88d2e;
-    }
-
-    .tag {
-      display: inline-block;
-      background-color: #fef5dc;
-      color: #5a4a00;
-      padding: 5px 10px;
-      border-radius: 20px;
-      margin: 4px 4px 8px 0;
-      font-weight: 500;
-      font-size: 0.85em;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
     }
 
     .full-width {
       grid-column: 1 / -1;
     }
 
-    .info {
-      font-size: 0.9em;
-      color: #ccc;
+    ul {
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: #d35400;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:hover {
+      color: #e67e22;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #ffeaa7;
+      color: #2d3436;
+      padding: 5px 12px;
+      border-radius: 30px;
+      margin: 5px 6px 10px 0;
+      font-size: 0.85em;
+    }
+
+    .glass-btn {
+      display: inline-block;
+      padding: 8px 16px;
+      background: #f1c40f;
+      color: #000;
+      border-radius: 25px;
+      font-weight: 600;
+      transition: 0.3s ease;
+      margin-top: 5px;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .glass-btn:hover {
+      background: #ffd700;
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
     }
 
     @media print {
       .download-btn {
         display: none;
-      }
-
-      body {
-        zoom: 90%;
       }
     }
   </style>
@@ -148,8 +163,7 @@
     <img src="Picture 1.png" alt="Hammad Younas" />
     <h1>Hammad Younas</h1>
     <p>Electrical Engineering Student | GIFT University</p>
-    <p>Email: hammad.younas.info@gmail.com | 📞 +92 322 7711664</p>
-    <p class="info">GitHub: <a href="https://github.com/Hammad-Younas-info" target="_blank">Hammad-Younas-info</a></p>
+    <p class="intro-text">An aspiring engineer passionate about automation, IoT, and real-world innovation.</p>
   </div>
 </header>
 
@@ -157,7 +171,7 @@
 
   <div class="section">
     <h2>🎓 Education</h2>
-    <p><strong>BSc. Electrical Engineering</strong><br>GIFT University, 2021 – 2025</p>
+    <p><strong>BSc. Electrical Engineering</strong><br>GIFT University</p>
     <p><strong>Intermediate</strong><br>Punjab College Gujranwala</p>
     <p><strong>Matriculation</strong><br>Education City School, Daska</p>
   </div>
@@ -181,21 +195,22 @@
     <h2>📜 Certifications</h2>
     <ul>
       <li>
-        <strong>Python Data Structures</strong> – Coursera, Jan 13, 2025<br/>
-        <a href="https://coursera.org/verify/MDE07E78YHYD" target="_blank">Verify Certificate</a>
+        <strong>Python Data Structures</strong> – Coursera<br/>
+        <a class="glass-btn" href="https://coursera.org/verify/MDE07E78YHYD" target="_blank">🎓 View Certificate</a>
       </li>
       <li>
-        <strong>Programming for Everybody (Python)</strong> – Coursera, Jan 12, 2025<br/>
-        <a href="https://coursera.org/verify/RBQ188318LFN" target="_blank">Verify Certificate</a>
+        <strong>Programming for Everybody (Python)</strong> – Coursera<br/>
+        <a class="glass-btn" href="https://coursera.org/verify/RBQ188318LFN" target="_blank">🎓 View Certificate</a>
       </li>
     </ul>
   </div>
 
   <div class="section">
     <h2>💼 Experience</h2>
-    <p><strong>Northern Power Generation Company Limited (NPGCL)</strong><br>
-    Internship – Gujranwala, Pakistan<br>
-    Worked on power plant operations, electrical maintenance, and energy systems understanding.</p>
+<p><strong>Northern Power Generation Company Limited (NPGCL)</strong><br>
+Internship – Gujranwala, Pakistan<br>
+Interned at Nandipur Hydel Power Plant. Gained hands-on experience in power plant systems, grid operations, and maintenance of electrical machinery.</p>
+
   </div>
 
   <div class="section full-width">
@@ -203,11 +218,11 @@
     <ul>
       <li>
         <strong>Clap Light Switch</strong><br/>
-        <a href="https://github.com/Hammad-Younas-info/clap-light-switch" target="_blank">View Project</a>
+        <a class="glass-btn" href="https://github.com/Hammad-Younas-info/clap-light-switch" target="_blank">🔗 View Project</a>
       </li>
       <li>
-        <strong>IoT-Based Home Automation System</strong><br/>
-        <a href="https://github.com/Hammad-Younas-info/IoT-Base-Home-Automation-System" target="_blank">View Project</a>
+        <strong> Smart Real-Time Home Automation</strong><br/>
+        <a class="glass-btn" href="https://github.com/Hammad-Younas-info/IoT-Base-Home-Automation-System" target="_blank">🔗 View Project</a>
       </li>
     </ul>
   </div>
