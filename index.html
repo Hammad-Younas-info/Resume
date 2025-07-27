@@ -20,7 +20,7 @@
     }
 
     header {
-      background: #111;
+      background: #000;
       color: #f1c40f;
       text-align: center;
       padding: 50px 20px;
@@ -28,24 +28,29 @@
       box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     }
 
+    .glass-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: transparent;
+      color: #f1c40f;
+      border: 2px solid #f1c40f;
+      border-radius: 25px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .glass-btn:hover {
+      background: #f1c40f;
+      color: #000;
+    }
+
     .download-btn {
       position: absolute;
       top: 20px;
       right: 30px;
-      padding: 10px 20px;
-      background-color: #f1c40f;
-      border: none;
-      color: #000;
-      font-weight: 700;
-      border-radius: 25px;
-      cursor: pointer;
-      transition: background 0.3s ease;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    }
-
-    .download-btn:hover {
-      background-color: #ffd700;
-      transform: translateY(-2px);
     }
 
     .profile-container img {
@@ -124,24 +129,6 @@
       font-size: 0.85em;
     }
 
-    .glass-btn {
-      display: inline-block;
-      padding: 8px 16px;
-      background: #f1c40f;
-      color: #000;
-      border-radius: 25px;
-      font-weight: 600;
-      transition: 0.3s ease;
-      margin-top: 5px;
-      text-decoration: none;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-
-    .glass-btn:hover {
-      background: #ffd700;
-      transform: translateY(-2px);
-    }
-
     @media (max-width: 768px) {
       .container {
         grid-template-columns: 1fr;
@@ -158,7 +145,7 @@
 <body>
 
 <header>
-  <button class="download-btn" onclick="window.print()">⬇ Download CV</button>
+  <button class="glass-btn download-btn" onclick="window.print()">⬇ Download CV</button>
   <div class="profile-container">
     <img src="Picture 1.png" alt="Hammad Younas" />
     <h1>Hammad Younas</h1>
@@ -207,10 +194,9 @@
 
   <div class="section">
     <h2>💼 Experience</h2>
-<p><strong>Northern Power Generation Company Limited (NPGCL)</strong><br>
-Internship – Gujranwala, Pakistan<br>
-Interned at Nandipur Hydel Power Plant. Gained hands-on experience in power plant systems, grid operations, and maintenance of electrical machinery.</p>
-
+    <p><strong>Northern Power Generation Company Limited (NPGCL)</strong><br>
+    Internship – Gujranwala, Pakistan<br>
+    Interned at Nandipur Hydel Power Plant. Gained hands-on experience in power plant systems, grid operations, and maintenance of electrical machinery.</p>
   </div>
 
   <div class="section full-width">
@@ -221,7 +207,7 @@ Interned at Nandipur Hydel Power Plant. Gained hands-on experience in power plan
         <a class="glass-btn" href="https://github.com/Hammad-Younas-info/clap-light-switch" target="_blank">🔗 View Project</a>
       </li>
       <li>
-        <strong> Smart Real-Time Home Automation</strong><br/>
+        <strong>Smart Real-Time Home Automation</strong><br/>
         <a class="glass-btn" href="https://github.com/Hammad-Younas-info/IoT-Base-Home-Automation-System" target="_blank">🔗 View Project</a>
       </li>
     </ul>
